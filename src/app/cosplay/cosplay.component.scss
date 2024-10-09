@@ -6,6 +6,12 @@
   width: 100%;
   background-repeat: no-repeat;
   // padding-bottom: 270px;
+
+  @media (max-width: 640px) {
+    height: 150px; /* Allow height to adjust automatically */
+    padding: 20px; /* Add padding for better spacing */
+    background-size: cover; /* Use cover to fill the background */
+  }
 }
 
 .slider {
@@ -24,7 +30,7 @@
   .slide-track {
     display: flex;
     width: calc(1500px * 10);
-    animation: scroll 30s linear infinite;
+    animation: scroll 60s linear infinite;
 
     .slide {
       width: auto;

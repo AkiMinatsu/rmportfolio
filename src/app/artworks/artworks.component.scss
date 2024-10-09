@@ -7,6 +7,12 @@
   height: 340px;
   width: 100%;
   background-repeat: no-repeat;
+
+  @media (max-width: 640px) {
+    height: 150px; /* Allow height to adjust automatically */
+    padding: 20px; /* Add padding for better spacing */
+    background-size: cover; /* Use cover to fill the background */
+  }
 }
 
 .grid-con {
@@ -29,7 +35,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 3rem;
+      font-size: 2rem;
       height: 40vh;
       color: black;
       font-weight: bold;
