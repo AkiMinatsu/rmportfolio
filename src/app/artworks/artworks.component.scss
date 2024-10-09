@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+
+.text-title {
+  background-image: url("../../assets/images/for-website/artname.png");
+  background-size: cover;
+  background-position: top;
+  height: 340px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.grid-con {
+  padding: 0px 50px;
+  background-image: url("../../assets/images/for-website/artwork2ss.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  div {
+    border: solid;
+    border-color: whitesmoke;
+    border-width: 1rem;
+    border-width: 2px;
+    height: 20rem;
+    border-radius: 1rem;
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      height: 40vh;
+      color: black;
+      font-weight: bold;
+      font-family: "Protest Strike", sans-serif;
+      text-shadow: 2px 2px whitesmoke;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+.bg-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.bg-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+  z-index: 0;
+}
+
+.bg-container:hover::before {
+  filter: blur(0);
+}
+
+.bg-painting::before {
+  background-image: url("/assets/images/for-website/Artworks/Painting/painting1.jpg");
+}
+
+.bg-sculpture::before {
+  background-image: url("/assets/images/for-website/Artworks/Sculpture/sculpture1.jpg");
+}
+
+.bg-printmaking::before {
+  background-image: url("/assets/images/for-website/Artworks/Printmaking/printmaking1.jpg");
+}
+
+.bg-anime::before {
+  background-image: url("/assets/images/for-website/Artworks/Animeart/devilrobin1.jpg");
+}
+
+.bg-digital::before {
+  background-image: url("/assets/images/for-website/Artworks/Digitalart/digitalart1.jpg");
+}
+
+.bg-religious::before {
+  background-image: url("/assets/images/for-website/Artworks/Religiousart/religious2.jpg");
+}
+
+.bg-pet::before {
+  background-image: url("/assets/images/for-website/Artworks/Petart/petart1.jpg");
+}
+
+.bg-portrait::before {
+  background-image: url("/assets/images/for-website/Artworks/Portrait/mukako.jpg");
+}
+.bg-fashioncraft::before {
+  background-image: url("/assets/images/for-website/Artworks/fashioncraft/Fashioncraft1.jpg");
+}
+
+.bg-container p {
+  position: relative;
+  z-index: 10;
+}
+
+@font-face {
+  font-family: "afrose";
+  src: url("../../assets/fonts/afrosevintage.ttf") format("truetype"); /* Adjust the path */
+  font-weight: normal;
+  font-style: normal;
+}

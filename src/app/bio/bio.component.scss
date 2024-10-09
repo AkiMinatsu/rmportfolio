@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300&display=swap");
+
+/* General container styles */
+.h-screen {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  overflow: hidden; /* To hide overflowing animation */
+}
+
+/* Fullscreen image background */
+.full-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/for-website/RMGhost2blue.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0; /* Ensure image is below other content */
+}
+
+/* Animated container for text and white background */
+.animated-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateX(-100%); /* Start off-screen to the left */
+  animation: slideIn 2s forwards; /* Animation for the split effect */
+}
+
+.white-background {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.5rem; /* Padding for the text */
+  position: relative;
+  z-index: 1; /* Ensure text is above the image */
+  mix-blend-mode: multiply;
+}
+
+.title-text {
+  font-family: "Archivo", sans-serif;
+  font-size: 3rem; /* Increased font size */
+  color: transparent;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transform: translateY(0); /* Adjusted for alignment */
+  animation: slideIn 2s forwards ease-in-out 1s, heartbeat 1.5s infinite,
+    borderPulse 2s infinite;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  background-image: url("../../assets/images/for-website/RMGhost3.jpg");
+  line-height: 1.2;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: right;
+  max-width: 100%;
+  -webkit-text-stroke: 15px;
+  letter-spacing: 20px;
+  mix-blend-mode: multiply;
+  z-index: 2;
+}
+
+.bio-text {
+  font-family: "Playfair Display", serif; /* Fixed font-family */
+  font-size: 1rem; /* Bio text size */
+  line-height: 1.3rem; /* Adjusted line height for better readability */
+  color: black; /* Black text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
+  opacity: 1;
+  transform: translateY(0); /* Ensure no movement initially */
+  animation: slideIn 4s forwards; /* Smooth delayed animation */
+  max-width: 100%; /* Fits within container without overflow */
+  text-align: right; /* Align the text to the left for a standard bio layout */
+  margin: 0; /* Remove any default margins */
+}
+@media (min-width: 640px) {
+  .white-background {
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem; /* Padding for the text */
+    position: relative;
+    z-index: 1; /* Ensure text is above the image */
+    mix-blend-mode: multiply;
+  }
+
+  .title-text {
+    font-family: "Archivo", sans-serif;
+    font-size: 7.5rem; /* Increased font size */
+    color: transparent;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 1;
+    transform: translateY(0); /* Adjusted for alignment */
+    animation: slideIn 2s forwards ease-in-out 1s, heartbeat 1.5s infinite,
+      borderPulse 2s infinite;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    background-image: url("../../assets/images/for-website/RMGhost3blue.jpg");
+    line-height: 1.2;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: right;
+    max-width: 100%;
+    -webkit-text-stroke: 15px;
+    letter-spacing: 10px;
+    mix-blend-mode: multiply;
+    z-index: 2;
+  }
+}
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  100% {
+    transform: translateX(0); /* End position */
+  }
+}
+
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Start position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End position */
+  }
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../../assets/fonts/Archivo.ttf") format("truetype"); /* Adjust the path */
+  font-weight: normal;
+  font-style: normal;
+}

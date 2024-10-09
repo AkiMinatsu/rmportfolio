@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+.bg {
+  background-image: url("../../assets/images/for-website/bgnew.jpg"); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire background */
+  height: 100vh;
+}
+
+.rotator {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+
+  img {
+    position: absolute;
+    animation: rotate 10s linear infinite;
+    opacity: 0;
+    width: 250vw;
+    height: auto;
+  }
+}
+
+.text-container {
+  text-align: center;
+  padding-top: 15rem;
+  h1 {
+    font-family: "Blood Crow Regular", sans-serif;
+    color: aliceblue;
+    font-size: 2.5rem;
+  }
+  p {
+    font-family: "Arcade Gamer", sans-serif;
+    color: aliceblue;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .rotator {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+
+    img {
+      position: absolute;
+      animation: rotate 10s linear infinite;
+      opacity: 0;
+      width: 60vw;
+      height: auto;
+    }
+  }
+  .text-container {
+    text-align: center;
+    padding-top: 34rem;
+    h1 {
+      font-family: "Blood Crow Regular", sans-serif;
+      color: aliceblue;
+      font-size: 5rem;
+    }
+    p {
+      font-family: "Blood Crow Regular", sans-serif;
+      color: aliceblue;
+      font-size: 2rem;
+    }
+  }
+}
+
+.rotator img:nth-child(1) {
+  animation-delay: 2s;
+}
+.rotator img:nth-child(2) {
+  animation-delay: 4s;
+}
+.rotator img:nth-child(3) {
+  animation-delay: 6s;
+}
+.rotator img:nth-child(4) {
+  animation-delay: 8s;
+}
+.rotator img:nth-child(5) {
+  animation-delay: 10s;
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  } /* Ensure the last image fades out smoothly */
+}
+
+@font-face {
+  font-family: "Arcade Gamer";
+  src: url("../../assets/fonts/ARCADE_I.TTF") format("truetype"); /* Adjust the path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blood Crow Regular";
+  src: url("../../assets/fonts/bloodcrow.ttf") format("truetype"); /* Adjust the path */
+  font-weight: normal;
+  font-style: normal;
+}
