@@ -67,6 +67,13 @@
   letter-spacing: 20px;
   mix-blend-mode: multiply;
   z-index: 2;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    font-size: 3rem; 
+    letter-spacing: 5px; 
+    -webkit-text-stroke: 6px; 
+   
+  }
 }
 
 .bio-text {
@@ -74,7 +81,6 @@
   font-size: 1rem; /* Bio text size */
   line-height: 1.3rem; /* Adjusted line height for better readability */
   color: black; /* Black text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
   opacity: 1;
   transform: translateY(0); /* Ensure no movement initially */
   animation: slideIn 4s forwards; /* Smooth delayed animation */
