@@ -1,17 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
-
 .text-title {
-  background-image: url("../../assets/images/for-website/artworks1.png");
+  background-image: url("../../assets/images/for-website/artwork9.png");
   background-size: cover;
-  background-position: top;
-  height: 340px;
+  background-position: center;
+  height: 200px;
   width: 100%;
   background-repeat: no-repeat;
 
   @media (max-width: 640px) {
-    height: 150px; /* Allow height to adjust automatically */
-    padding: 20px; /* Add padding for better spacing */
-    background-size: cover; /* Use cover to fill the background */
+    height: 150px;
+    padding: 20px;
+    background-size: cover; 
   }
 }
 
@@ -35,17 +33,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 3rem;
+      font-size: 2.5rem;
       height: 40vh;
       color: black;
       font-weight: bold;
-      font-family: "Protest Strike", sans-serif;
+      font-family: "archivo", sans-serif;
       text-shadow: 2px 2px whitesmoke;
       text-transform: uppercase;
       cursor: pointer;
 
       @media (max-width: 767px) {
-        font-size: 1.8rem; /* Smaller font size for mobile */
+        font-size: 1.3rem; /* Smaller font size for mobile */
         height: 50vh; /* Adjust height for smaller screens */
       }
     }
@@ -117,8 +115,8 @@
 }
 
 @font-face {
-  font-family: "afrose";
-  src: url("../../assets/fonts/afrosevintage.ttf") format("truetype"); /* Adjust the path */
-  font-weight: normal;
+  font-family: "archivo";
+  src: url("../../assets/fonts/archivoblack.ttf") format("truetype"); /* Adjust the path */
+  font-weight: 7normal;
   font-style: normal;
 }
