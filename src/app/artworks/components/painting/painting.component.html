@@ -1,15 +1,14 @@
-<h2 mat-dialog-title>Paintings</h2>
+<h2 mat-dialog-title class="dialog-title">Paintings</h2>
 
 <mat-dialog-content>
   <!-- Display current image -->
   <img
     [src]="images[currentIndex]"
     alt="Painting"
-    style="width: 100%; height: 30rem"
+    class="art-image"
   />
 
-  <!-- Navigation buttons for the carousel -->
-  <div style="display: flex; justify-content: space-between; margin-top: 20px">
+  <div class="button-container">
     <button mat-button (click)="prevImage()" [disabled]="currentIndex === 0">
       Previous
     </button>
