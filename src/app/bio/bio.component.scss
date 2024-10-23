@@ -46,7 +46,7 @@
 
 .title-text {
   font-family: "Archivo", sans-serif;
-  font-size: 3rem; /* Increased font size */
+  font-size: 8.5rem !important;
   color: transparent;
   background-size: cover;
   background-clip: text;
@@ -63,16 +63,16 @@
   border-radius: 10px;
   text-align: right;
   max-width: 100%;
-  -webkit-text-stroke: 15px;
+  -webkit-text-stroke: 15px !important;
   letter-spacing: 20px;
   mix-blend-mode: multiply;
   z-index: 2;
 
   @media (min-width: 320px) and (max-width: 767px) {
-    font-size: 3rem; 
-    letter-spacing: 5px; 
-    -webkit-text-stroke: 6px; 
-   
+    font-size: 3rem !important; 
+    letter-spacing: 2px !important; 
+    -webkit-text-stroke: 5px !important;
+    font-weight: 700;
   }
 }
 
@@ -161,6 +161,6 @@
 @font-face {
   font-family: "Archivo";
   src: url("../../assets/fonts/Archivo.ttf") format("truetype"); /* Adjust the path */
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
+  font-style: bold;
 }
