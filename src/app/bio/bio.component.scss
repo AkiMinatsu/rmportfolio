@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300&display=swap");
 
-/* General container styles */
+
 .h-screen {
-  height: 100vh; /* Full viewport height */
-  width: 100vw; /* Full viewport width */
+  height: 100vh; 
+  width: 100vw; 
   display: flex;
-  overflow: hidden; /* To hide overflowing animation */
+  overflow: hidden; 
 }
 
-/* Fullscreen image background */
+
 .full-image {
   position: absolute;
   top: 0;
@@ -18,17 +18,17 @@
   background-image: url("../../assets/images/for-website/RMGhost2blue.jpg");
   background-size: cover;
   background-position: center;
-  z-index: 0; /* Ensure image is below other content */
+  z-index: 0; 
 }
 
-/* Animated container for text and white background */
+
 .animated-container {
   display: flex;
   width: 100%;
   height: 100%;
   position: relative;
-  transform: translateX(-100%); /* Start off-screen to the left */
-  animation: slideIn 2s forwards; /* Animation for the split effect */
+  transform: translateX(-100%); 
+  animation: slideIn 2s forwards; 
 }
 
 .white-background {
@@ -38,24 +38,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 2.5rem; /* Padding for the text */
+  padding: 2.5rem; 
   position: relative;
-  z-index: 1; /* Ensure text is above the image */
+  z-index: 1; 
   mix-blend-mode: multiply;
 }
 
 .title-text {
   font-family: "Archivo", sans-serif;
-  font-size: 8.5rem !important;
+  font-size: 5.5rem !important;
   color: transparent;
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transform: translateY(0); /* Adjusted for alignment */
+  transform: translateY(0); 
   animation: slideIn 2s forwards ease-in-out 1s, heartbeat 1.5s infinite,
     borderPulse 2s infinite;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: bold;
   background-image: url("../../assets/images/for-website/RMGhost3blue.jpg");
   line-height: 1.2;
@@ -63,7 +63,7 @@
   border-radius: 10px;
   text-align: right;
   max-width: 100%;
-  -webkit-text-stroke: 15px !important;
+  -webkit-text-stroke: 10px !important;
   letter-spacing: 20px;
   mix-blend-mode: multiply;
   z-index: 2;
@@ -77,16 +77,16 @@
 }
 
 .bio-text {
-  font-family: "Playfair Display", serif; /* Fixed font-family */
-  font-size: 1rem; /* Bio text size */
-  line-height: 1.3rem; /* Adjusted line height for better readability */
-  color: black; /* Black text */
+  font-family: "Playfair Display", serif; 
+  font-size: 1rem; 
+  line-height: 1.3rem; 
+  color: black; 
   opacity: 1;
-  transform: translateY(0); /* Ensure no movement initially */
-  animation: slideIn 4s forwards; /* Smooth delayed animation */
-  max-width: 100%; /* Fits within container without overflow */
-  text-align: right; /* Align the text to the left for a standard bio layout */
-  margin: 0; /* Remove any default margins */
+  transform: translateY(0); 
+  animation: slideIn 4s forwards; 
+  max-width: 100%; 
+  text-align: right; 
+  margin: 0; 
 }
 @media (min-width: 640px) {
   .white-background {
@@ -96,36 +96,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 5rem; /* Padding for the text */
+    padding: 5rem; 
     position: relative;
-    z-index: 1; /* Ensure text is above the image */
+    z-index: 1; 
     mix-blend-mode: multiply;
   }
 
-  .title-text {
-    font-family: "Archivo", sans-serif;
-    font-size: 7.5rem; /* Increased font size */
-    color: transparent;
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity: 1;
-    transform: translateY(0); /* Adjusted for alignment */
-    animation: slideIn 2s forwards ease-in-out 1s, heartbeat 1.5s infinite,
-      borderPulse 2s infinite;
-    margin-bottom: 2rem;
-    font-weight: bold;
-    background-image: url("../../assets/images/for-website/RMGhost3blue.jpg");
-    line-height: 1.2;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: right;
-    max-width: 100%;
-    -webkit-text-stroke: 15px;
-    letter-spacing: 10px;
-    mix-blend-mode: multiply;
-    z-index: 2;
-  }
+  
 }
 @keyframes heartbeat {
   0%,
@@ -137,30 +114,30 @@
   }
 }
 
-/* Animation keyframes */
+
 @keyframes slideIn {
   0% {
-    transform: translateX(-100%); /* Start off-screen to the left */
+    transform: translateX(-100%); 
   }
   100% {
-    transform: translateX(0); /* End position */
+    transform: translateX(0); 
   }
 }
 
 @keyframes fadeInMoveUp {
   0% {
     opacity: 0;
-    transform: translateY(50px); /* Start position */
+    transform: translateY(50px); 
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* End position */
+    transform: translateY(0); 
   }
 }
 
 @font-face {
   font-family: "Archivo";
-  src: url("../../assets/fonts/Archivo.ttf") format("truetype"); /* Adjust the path */
+  src: url("../../assets/fonts/Archivo.ttf") format("truetype"); 
   font-weight: bold;
   font-style: bold;
 }
