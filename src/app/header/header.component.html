@@ -1,27 +1,17 @@
 <header class="fixed w-screen p-4 bg-[#0a2239] z-50">
   <div class="container mx-auto text-center block sm:flex justify-between items-center">
     <div class="flex items-center">
-      <!-- Logo added on the left side of the text -->
+      <!-- Logo -->
       <img src="../../assets/images/for-website/logo.png" alt="Mae's Art Logo" class="w-10 h-10 mr-2" />
       <h1 class="text-white sm:text-2xl text-xl font-bold">Mae's Art-RMB</h1>
     </div>
     <nav>
       <ul class="flex space-x-4">
-        <li>
-          <a href="#home" class="text-white">Home</a>
-        </li>
-        <li>
-          <a href="#about" class="text-white">About</a>
-        </li>
-        <li>
-          <a href="#artworks" class="text-white">Artworks</a>
-        </li>
-        <li>
-          <a href="#cosplay" class="text-white">Cosplay</a>
-        </li>
-        <li>
-          <a href="#contacts" class="text-white">Contacts</a>
-        </li>
+        <li><a (click)="scrollToSection('home')" class="text-white cursor-pointer">Home</a></li>
+        <li><a (click)="scrollToSection('about')" class="text-white cursor-pointer">About</a></li>
+        <li><a (click)="scrollToSection('artworks')" class="text-white cursor-pointer">Artworks</a></li>
+        <li><a (click)="scrollToSection('cosplay')" class="text-white cursor-pointer">Cosplay</a></li>
+        <li><a (click)="scrollToSection('contacts')" class="text-white cursor-pointer">Contacts</a></li>
       </ul>
     </nav>
   </div>
